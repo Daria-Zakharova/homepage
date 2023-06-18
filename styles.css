@@ -16,6 +16,7 @@ body {
     --border-color: #ff9a0045;
     --text-decoration-color: #ff9a00;
     --bg-decoration-color: #ff9a0029;
+    --bg-title-color: #fdf7ee;
 }
 
 ul {
@@ -151,7 +152,29 @@ ul {
 }
 
 .contact-info__link-txt {
+    position: relative;
     word-break: break-word;
+}
+
+.contact-info__link-txt[data-title]::after {
+    content: '';
+    opacity: 0;
+    transition: opacity 500ms 200ms;
+}
+
+.contact-info__link-txt[data-title]:hover::after {
+    content: attr(data-title);
+    position: absolute;
+    z-index: 100;
+    top: calc(100% + 5px);
+    left: 25%;
+    width: 75%;
+    min-width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px var(--text-decoration-color);
+    background-color: var(--bg-title-color);
+    opacity: 1;
 }
 
 .contact-info__avatar {
