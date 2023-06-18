@@ -15,6 +15,11 @@ body {
     --icon-color: #6a737d;
     --border-color: #ff9a0045;
     --text-decoration-color: #ff9a00;
+    --bg-decoration-color: #ff9a0029;
+}
+
+ul {
+    list-style: none;
 }
 
 .container {
@@ -46,7 +51,14 @@ body {
 .resume__block {
     border-bottom: 3px solid var(--border-color);
     padding-bottom: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.resume__block--header {
+    padding: 30px;
+    margin-bottom: 45px;
+    border-radius: 10px 10px 0 0;
+    background-color: var(--bg-decoration-color);
 }
 
 @media screen and (max-width: 576px) {
@@ -60,6 +72,10 @@ body {
         align-items: center;
     }
 
+    .contact-info__block {
+        min-width: 100%;
+    }
+
     .contact-info__block:not(:last-child) {
         margin-bottom: 20px;
     }
@@ -71,7 +87,8 @@ body {
 /* Contact-info */
 
 .contact-info__header,
-.contact-info__sub-header {
+.contact-info__sub-header,
+.contact-info__comment {
     text-align: center;
 }
 
@@ -84,17 +101,27 @@ body {
 
 .contact-info__sub-header {
     color: var(--secondary-text-color);
+    margin-bottom: 15px;
+}
+
+.contact-info__comment {
+    color: var(--durability-text-color);
     margin-bottom: 30px;
 }
 
 .contact-info__block {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .contact-info__block--center {
     justify-content: center;
+    align-items: center;
+}
+
+.contact-info__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .contact-info__item {
@@ -109,19 +136,22 @@ body {
 }
 
 .contact-info__item-icon-wrapper {
+    display: inline-block;
     margin-right: 10px;
     width: 20px;
+    height: 20px;
     display: flex;
     justify-content: center;
-}
-
-.contact-info__item-icon path {
     fill: var(--icon-color);
 }
 
 .contact-info__item-icon {
     height: 1.1428rem;
     vertical-align: text-bottom;
+}
+
+.contact-info__link-txt {
+    word-break: break-word;
 }
 
 .contact-info__avatar {
@@ -131,6 +161,12 @@ body {
     object-fit: cover;
     border: 3px solid;
     border-color: var(--text-decoration-color);
+}
+
+@media screen and (min-width: 577px) {
+    .contact-info__block {
+        width: calc(100%/3);
+    }
 }
 
 /* Intro and skills */
