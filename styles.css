@@ -8,7 +8,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
-    cursor: url(./assets/cursors/cursor.png), auto;
+    cursor: url("./assets/cursors/cursor.png"), auto;
 
     --primary-text-color: #181820;
     --secondary-text-color: #5c5c62;
@@ -26,7 +26,7 @@ a {
 }
 
 a *, a, button {
-    cursor: url(./assets/cursors/cursor-pointer.png), pointer;
+    cursor: url("./assets/cursors/cursor-pointer.png"), pointer;
 }
 
 .container {
@@ -64,7 +64,6 @@ a *, a, button {
 }
 
 .hidden {
-
     position: absolute;
     width: 1px;
     height: 1px;
@@ -222,6 +221,7 @@ a *, a, button {
 .contact-info__item:hover .contact-info__item-icon-wrapper {
     fill: var(--text-decoration-color);
 }
+
 .contact-info__link-txt {
     word-break: break-word;
 }
@@ -315,6 +315,7 @@ transform: rotateX(0deg);
 }
 
 /* Experience and additional info */
+
 .experiences {
     flex: 1 1 60%;
     margin-right: 50px;
@@ -454,10 +455,8 @@ transform: rotateX(0deg);
     z-index: 2;
     width: 100vw;
     height: 100vh;
-
     display: flex;
-
-    background-color: #00000066;
+    background-color: #0006;
     transition:  opacity var(--transition-time), visibility var(--transition-time);
 }
 
@@ -470,7 +469,7 @@ transform: rotateX(0deg);
     background-color: var(--bg-title-color);
     transform: scale(1);
     object-fit: contain;
-    transition: transform 250ms cubic-bezier(.4, 0, .2, 1);
+    transition: transform var(--transition-time);
 }
 
 .modal img {
