@@ -409,7 +409,7 @@ transform: rotateX(0deg);
 .additional-info__education-header {
     color: var(--secondary-text-color);
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .additional-info__education-university:not(:last-child) {
