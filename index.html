@@ -10,54 +10,159 @@
     <main>
       <div class="resume">
         <div class="container">
-          <div class="resume__block">
-            <h1 class="contact-info__header">Bulka</h1>
-            <h3 class="contact-info__sub-header">Senior Hooman Manager</h3>
+          <div class="resume__block resume__block--header">
+            <h1 class="contact-info__header">Daria Zakharova</h1>
+            <h3 class="contact-info__sub-header">Frontend developer</h3>
+            <div class="contact-info__comment">
+              (Well, I'm going to become frontend developer in future, in the
+              distant future)
+            </div>
 
             <div class="contact_info_container fh">
-              <div class="contact-info__block"></div>
+              <div class="contact-info__block">
+                <ul class="contact-info__list">
+                  <li class="contact-info__list-item">
+                    <a
+                      href="https://www.linkedin.com/in/daria-zakharova-acc/"
+                      rel="author"
+                      target="_blank"
+                      class="contact-info__item"
+                    >
+                      <div class="contact-info__item-icon-wrapper">
+                        <svg>
+                          <use
+                            href="./assets/icons-sprite.svg#icon-linkedin-square"
+                          ></use>
+                        </svg>
+                      </div>
+                      <span class="contact-info__link-txt">LinkedIn</span>
+                    </a>
+                  </li>
+                  <li class="contact-info__list-item">
+                    <a
+                      href="https://github.com/Daria-Zakharova/"
+                      rel="author"
+                      target="_blank"
+                      class="contact-info__item"
+                    >
+                      <div class="contact-info__item-icon-wrapper">
+                        <svg>
+                          <use
+                            href="./assets/icons-sprite.svg#icon-github"
+                          ></use>
+                        </svg>
+                      </div>
+                      <span class="contact-info__link-txt">Github</span>
+                    </a>
+                  </li>
+                  <li class="contact-info__list-item">
+                    <a
+                      href="https://t.me/DariaZverek"
+                      rel="author"
+                      class="contact-info__item"
+                    >
+                      <div class="contact-info__item-icon-wrapper">
+                        <svg>
+                          <use
+                            href="./assets/icons-sprite.svg#icon-telegram"
+                          ></use>
+                        </svg>
+                      </div>
+                      <span class="contact-info__link-txt">Telegram</span>
+                    </a>
+                  </li>
+                  <li class="contact-info__list-item">
+                    <a
+                      href="https://ibb.co/GT3F0zG"
+                      rel="author"
+                      target="_blank"
+                      class="contact-info__item"
+                    >
+                      <div class="contact-info__item-icon-wrapper">
+                        <svg>
+                          <use href="./assets/icons-sprite.svg#icon-paw"></use>
+                        </svg>
+                      </div>
+                      <span
+                        class="contact-info__link-txt"
+                        data-title="If it's not important info than what on this unfair Earth is?"
+                        >My cat photo</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+              </div>
 
               <div class="contact-info__block contact-info__block--center">
-                <img
-                  class="contact-info__avatar"
-                  src="assets/avatar.jpg"
-                  alt="Avatar"
-                />
+                <div class="contact-info__avatar-wrap">
+                  <img
+                    class="contact-info__avatar contact-info__avatar--front"
+                    src="assets/avatar.jpg"
+                    alt="Avatar"
+                  />
+                  <img
+                    class="contact-info__avatar contact-info__avatar--back"
+                    src="assets/extra-avatar.jpg"
+                    alt="Avatar"
+                  />
+                </div>
               </div>
 
               <div class="contact-info__block">
-                <a href="" rel="author" class="contact-info__item">
-                  <div class="contact-info__item-icon-wrapper">
-                    <svg
-                      class="contact-info__item-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 384 512"
+                <ul class="contact-info__list">
+                  <li>
+                    <a
+                      href="tel:+380939916557"
+                      rel="author"
+                      class="contact-info__item"
                     >
-                      <path
-                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <span>Lviv, Ukraine</span>
-                </a>
-                <a
-                  href="https://ua.linkedin.com/company/binary-studio_241166"
-                  rel="author"
-                  class="contact-info__item"
-                >
-                  <div class="contact-info__item-icon-wrapper">
-                    <svg
-                      class="contact-info__item-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 448 512"
+                      <div class="contact-info__item-icon-wrapper">
+                        <svg>
+                          <use
+                            href="./assets/icons-sprite.svg#icon-phone"
+                          ></use>
+                        </svg>
+                      </div>
+                      <span class="contact-info__link-txt">0939916557</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="mailto:dariazakharova.smthelse@gmail.com"
+                      rel="author"
+                      class="contact-info__item"
                     >
-                      <path
-                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <span>binary-studio</span>
-                </a>
+                      <div class="contact-info__item-icon-wrapper">
+                        <svg>
+                          <use
+                            href="./assets/icons-sprite.svg#icon-envelope"
+                          ></use>
+                        </svg>
+                      </div>
+                      <span
+                        class="contact-info__link-txt"
+                        data-title="Getting it unique was harder than I could imagine"
+                        >dariazakharova.smthelse<wbr />@gmail.com</span
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://goo.gl/maps/vF8XJw4zKjvavtnh7"
+                      rel="author"
+                      class="contact-info__item"
+                    >
+                      <div class="contact-info__item-icon-wrapper">
+                        <svg>
+                          <use
+                            href="./assets/icons-sprite.svg#icon-map-marker"
+                          ></use>
+                        </svg>
+                      </div>
+                      <span class="contact-info__link-txt">Kyiv, Ukraine</span>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -66,21 +171,40 @@
           <div class="resume__block">
             <div class="intro">
               <div class="intro__icon-wrapper">
-                <svg
-                  class="intro__icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
-                  ></path>
+                <svg class="intro__icon">
+                  <use href="./assets/icons-sprite.svg#icon-quote-left"></use>
                 </svg>
               </div>
-              <p class="intro_text">
-                Meow. I am a Binary Studio cat. Still got 7 lives. Work in IT,
-                Full Stack Evil, all I do is sleep and try to help out hoomans
-                with their projects whenever they need me.
-              </p>
+              <div class="intro_text">
+                <p>
+                  <span class="crossed">Meow.</span> I started studying Frontend
+                  development after participating in another "Make your own
+                  website in 4 days" marathon in March 2022.
+                </p>
+                <p>
+                  It was like: now I need just a little experience and I will
+                  finally find out why some of the websites are perfectly
+                  user-friendly while others, well, sligthly differ. I was on my
+                  way to the Power to change the world, the Internet, the
+                  Future! Having aquired some experience I found out only the
+                  endless depth of unacquired experience but didn't give up and
+                  took Full-stack course.
+                </p>
+                <p>
+                  Eventually I liked it more and more, either developing itself
+                  or the magic of teamwork and the fascinating process of
+                  creating some fairly big projects from the scratch but
+                  <span class="crossed">what a surprise</span> I still feel need
+                  for
+                  <span
+                    class="accented"
+                    data-title='It should be "a lot of" whom am I trying to fool now?'
+                    >a little</span
+                  >
+                  more experience to let my poor little CV out into big world,
+                  so I am here.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -88,8 +212,27 @@
           <div class="resume__block">
             <div class="skills">
               <h3 class="skills__header">Skills</h3>
+              <div class="skills__comment">(Hover to see details)</div>
               <p class="skills__text">
-                Sleep, eat, more sleep, meow, mrrr, purr.
+                <span data-title="Well it was supposed">HTML, CSS, SCSS,</span>
+                <span data-title="Not JS Query, unfortunately">JS,</span>
+                <span
+                  data-title="I used hooks syntax rather than classes so know it better but can apply both"
+                  >React,</span
+                >
+                <span
+                  data-title="I need some docs but I have successfully used it for pet project and homeworks"
+                  >Redux,</span
+                >
+                <span
+                  data-title="I solemnly swear to stop using module.exports syntax one day"
+                >
+                  basics of Node,</span
+                >
+                I am fond of
+                <span data-title="finding&stealing">inventing</span> some tiny
+                eye-catching features but try not to turn them into animation
+                hell.
               </p>
             </div>
           </div>
@@ -102,25 +245,99 @@
                 <div class="experiences__company">
                   <div class="experiences__company-header">
                     <span class="experiences__company-header-durability"
-                      >For whole my life</span
+                      >December 2015 - February 2023</span
                     >
                     <h3 class="experiences__company-header-name">
-                      BinaryStudio
+                      MyBookmark - (handmade bookmarks & gifts)
                     </h3>
                   </div>
-
                   <div class="experiences__company-project">
                     <span class="experiences__company-project-role"
-                      >Binary Studio Cat</span
-                    >
-                    <h3 class="experiences__company-project-name">
-                      Hooman project
-                    </h3>
+                      >Artist, later Shipping&Workshop manager
+                    </span>
                     <ul class="experiences__company-project-responsibilities">
-                      <li>Supported hoomans</li>
-                      <li>Slept all the time</li>
-                      <li>Lied on the keyboard</li>
-                      <li>Watched my hoomans working</li>
+                      <li>Planned monthly task-lists</li>
+                      <li>Arranged order shipment</li>
+                      <li>
+                        Workshop: ordered materials, controlled quality of
+                        products before shipping to clients
+                      </li>
+                    </ul>
+                    <h4 class="experiences__achievements-header">
+                      Achievements
+                    </h4>
+                    <ul class="experiences__achievements">
+                      <li>Thoroughly studied all stages of production</li>
+                      <li>
+                        Took part in brainstorms on new product series and
+                        advertising concepts, worked out ideas that were applied
+                        and worked
+                      </li>
+                      <li class="highlighted">
+                        <span
+                          data-title="Still so proud of it and going to
+                      upgrade it with simple backend instead of local storage
+                      saving."
+                          >Wrote
+                          <a
+                            class="underlined"
+                            href="https://daria-zakharova.github.io/box-content-planner/"
+                            >a JS-app</a
+                          >
+                          to plan multi-item amazon boxes content and save
+                          shipping lists</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="experiences__company">
+                  <div class="experiences__company-header">
+                    <span class="experiences__company-header-durability"
+                      >February 2023 - now</span
+                    >
+                    <h3 class="experiences__company-header-name">Fluranet</h3>
+                  </div>
+                  <div class="experiences__company-project">
+                    <span class="experiences__company-project-role"
+                      >Artist
+                    </span>
+                    <ul class="experiences__company-project-responsibilities">
+                      <li>
+                        Just imagine and make funny creatures all day long
+                      </li>
+                    </ul>
+                    <h4 class="experiences__achievements-header">
+                      Achievements
+                    </h4>
+                    <ul class="experiences__gallery">
+                      <li>
+                        <a
+                          href="./assets/gallery/mushroom.jpg"
+                          data-descr="mushroom keeper"
+                          ><img
+                            src="./assets/gallery/rsz_mushroom.jpg"
+                            alt="mushroom keeper"
+                        /></a>
+                      </li>
+                      <li>
+                        <a
+                          href="./assets/gallery/sloth.jpg"
+                          data-descr="scared ice age sloth"
+                          ><img
+                            src="./assets/gallery/rsz_sloth.jpg"
+                            alt="scared ice age sloth"
+                        /></a>
+                      </li>
+                      <li>
+                        <a
+                          href="./assets/gallery/tortoise.jpg"
+                          data-descr="happy tortoise"
+                          ><img
+                            src="./assets/gallery/rsz_tortoise.jpg"
+                            alt="happy tortoise"
+                        /></a>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -133,27 +350,40 @@
                     <div class="additional-info__education-university">
                       <span
                         class="additional-info__education-university-durability"
-                        >2021</span
-                      >
+                        >2008 - 2013
+                      </span>
                       <h3
                         class="additional-info__education-university-speciality"
                       >
-                        Cat track
+                        Germanic Philology
                       </h3>
                       <p class="additional-info__education-university-name">
-                        Binary Studio Academy
+                        Kyiv National Linguistic University
+                      </p>
+                    </div>
+                    <div class="additional-info__education-university">
+                      <span
+                        class="additional-info__education-university-durability"
+                        >2022 - 2023
+                      </span>
+                      <h3
+                        class="additional-info__education-university-speciality"
+                      >
+                        FullStack Developer
+                      </h3>
+                      <p class="additional-info__education-university-name">
+                        GoIt It School
                       </p>
                     </div>
                   </div>
 
                   <div class="additional-info__languages">
                     <h3 class="additional-info__languages-header">Languages</h3>
-                    <p class="additional-info__languages-item">Meow dialect</p>
                     <p class="additional-info__languages-item">
-                      Ukrainian (understand)
+                      Ukrainian (native)
                     </p>
                     <p class="additional-info__languages-item">
-                      English (don't understand)
+                      English (B1-B2)
                     </p>
                   </div>
                 </div>
@@ -163,5 +393,6 @@
         </div>
       </div>
     </main>
+    <script type="module" src="index.js"></script>
   </body>
 </html>
